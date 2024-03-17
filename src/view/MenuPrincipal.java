@@ -27,6 +27,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         Cad_Pacientes = new javax.swing.JMenuItem();
         Cad_Medicamentos = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
+        Cad_Medicar = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         Gera_Relat_Med = new javax.swing.JMenuItem();
         Gera_Relat_Paciente = new javax.swing.JMenuItem();
@@ -64,6 +66,21 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenu1.add(Cad_Medicamentos);
 
         jMenuBar1.add(jMenu1);
+
+        jMenu4.setText("Registrar");
+        jMenu4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+
+        Cad_Medicar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Cad_Medicar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/medicar.png"))); // NOI18N
+        Cad_Medicar.setText("Medicar");
+        Cad_Medicar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Cad_MedicarActionPerformed(evt);
+            }
+        });
+        jMenu4.add(Cad_Medicar);
+
+        jMenuBar1.add(jMenu4);
 
         jMenu3.setText("Relatorio");
         jMenu3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -116,7 +133,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 468, Short.MAX_VALUE)
+            .addGap(0, 469, Short.MAX_VALUE)
         );
 
         pack();
@@ -154,6 +171,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
         Tela_CadPaciente S = new Tela_CadPaciente();
         S.setVisible(true);
     }//GEN-LAST:event_Cad_PacientesActionPerformed
+
+    private void Cad_MedicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_MedicarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Cad_MedicarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -193,12 +214,14 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem Cad_Medicamentos;
+    private javax.swing.JMenuItem Cad_Medicar;
     private javax.swing.JMenuItem Cad_Pacientes;
     private javax.swing.JMenuItem Gera_Relat_Med;
     private javax.swing.JMenuItem Gera_Relat_Paciente;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem2;
     // End of variables declaration//GEN-END:variables
