@@ -26,25 +26,362 @@ public class Tela_CadMedicamento extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
+        txtCodMedicamento = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        txtNomeComercial = new javax.swing.JTextField();
+        txtNomeQuimico = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        txtNomeLaboratorio = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        txtFormaFarmaceutica = new javax.swing.JTextField();
+        txtApresentacao = new javax.swing.JTextField();
+        cbDosagemMedicamento = new javax.swing.JComboBox<>();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        txtQtdeComposicao = new javax.swing.JTextField();
+        txtComposicao = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        txtTipoMedicamento = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        txtTipoComposicao = new javax.swing.JTextField();
+        cbDosagemComposicao = new javax.swing.JComboBox<>();
+        jLabel13 = new javax.swing.JLabel();
+        checkManipulado = new javax.swing.JCheckBox();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        tabelMedicamentoComposicao = new javax.swing.JTable();
+        checkVendaLivre = new javax.swing.JCheckBox();
+        checkVendaRestrita = new javax.swing.JCheckBox();
+        checkVendaControlada = new javax.swing.JCheckBox();
+        jLabel7 = new javax.swing.JLabel();
+        txtDataCadMedicamento = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        txtResponsavelCadMedicamento = new javax.swing.JTextField();
+        btnAddComposicao = new javax.swing.JButton();
+        btnVoltarCadMedicamento = new javax.swing.JButton();
+        btnLimparCadMedicamento = new javax.swing.JButton();
+        btnGravarCadMedicamento = new javax.swing.JButton();
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable1);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cadastro de Medicamento - Sistema de monitoramento de medicacao - V.01 ");
-        setPreferredSize(new java.awt.Dimension(600, 500));
         setResizable(false);
+
+        jLabel1.setText("Código");
+
+        jLabel2.setText("Nome comercial");
+
+        jLabel3.setText("Nome químico");
+
+        jLabel4.setText("Laboratório");
+
+        jLabel5.setText("Forma farmacêutica");
+
+        cbDosagemMedicamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Mg", "Ml" }));
+
+        jLabel8.setText("Apresentação");
+
+        jLabel6.setText("Composição");
+
+        jLabel9.setText("Tipo");
+
+        jLabel11.setText("Quantidade");
+
+        txtTipoMedicamento.setText("(Antibiótico, Anti-inflamatório, etc.)");
+        txtTipoMedicamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTipoMedicamentoActionPerformed(evt);
+            }
+        });
+
+        jLabel12.setText("Tipo");
+
+        cbDosagemComposicao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Mg", "Ml" }));
+
+        jLabel13.setText("Cadastro de medicamento");
+
+        checkManipulado.setText("Manipulado");
+
+        jLabel14.setText("Dosagem");
+
+        jLabel15.setText("Dosagem");
+
+        tabelMedicamentoComposicao.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Composição", "Quantidade", "Tipo", "Dosagem"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, true, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane3.setViewportView(tabelMedicamentoComposicao);
+
+        checkVendaLivre.setText("Venda livre");
+
+        checkVendaRestrita.setText("Venda restrita");
+
+        checkVendaControlada.setText("Venda controlada");
+
+        jLabel7.setText("Data de cadastro");
+
+        txtDataCadMedicamento.setText("DD/MM/AAAA");
+
+        jLabel10.setText("Responsável pelo cadastro");
+
+        txtResponsavelCadMedicamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtResponsavelCadMedicamentoActionPerformed(evt);
+            }
+        });
+
+        btnAddComposicao.setText("Adicionar");
+
+        btnVoltarCadMedicamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/sair.png"))); // NOI18N
+        btnVoltarCadMedicamento.setText("VOLTAR");
+        btnVoltarCadMedicamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVoltarCadMedicamentoActionPerformed(evt);
+            }
+        });
+
+        btnLimparCadMedicamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/limpar.png"))); // NOI18N
+        btnLimparCadMedicamento.setText("LIMPAR");
+        btnLimparCadMedicamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimparCadMedicamentoActionPerformed(evt);
+            }
+        });
+
+        btnGravarCadMedicamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
+        btnGravarCadMedicamento.setText("GRAVAR");
+        btnGravarCadMedicamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGravarCadMedicamentoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel8)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(txtTipoMedicamento, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(txtApresentacao, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(txtNomeLaboratorio, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                                        .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING))
+                                    .addComponent(jLabel9))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtFormaFarmaceutica)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel5)
+                                            .addComponent(checkManipulado)
+                                            .addComponent(jLabel14)
+                                            .addComponent(cbDosagemMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtCodMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel1))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtNomeQuimico, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(txtNomeComercial, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(checkVendaLivre)
+                                .addGap(18, 18, 18)
+                                .addComponent(checkVendaRestrita)
+                                .addGap(18, 18, 18)
+                                .addComponent(checkVendaControlada)))
+                        .addContainerGap(83, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(jLabel10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtResponsavelCadMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtDataCadMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnAddComposicao, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtComposicao, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel6))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtQtdeComposicao, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel11))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtTipoComposicao, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel12))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel15)
+                                    .addComponent(cbDosagemComposicao, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addComponent(btnGravarCadMedicamento)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnLimparCadMedicamento)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnVoltarCadMedicamento))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel13)))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel3)
+                        .addComponent(jLabel2)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtCodMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNomeQuimico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNomeComercial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtNomeLaboratorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtFormaFarmaceutica, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtApresentacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checkManipulado))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtTipoMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbDosagemMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(checkVendaLivre)
+                    .addComponent(checkVendaRestrita)
+                    .addComponent(checkVendaControlada))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel15))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtComposicao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtQtdeComposicao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTipoComposicao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbDosagemComposicao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(7, 7, 7)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(txtResponsavelCadMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7)
+                    .addComponent(txtDataCadMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAddComposicao))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(btnVoltarCadMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnLimparCadMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnGravarCadMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtTipoMedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTipoMedicamentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTipoMedicamentoActionPerformed
+
+    private void txtResponsavelCadMedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtResponsavelCadMedicamentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtResponsavelCadMedicamentoActionPerformed
+
+    private void btnVoltarCadMedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarCadMedicamentoActionPerformed
+
+        dispose(); // fechando a tela atual
+        MenuPrincipal x = new MenuPrincipal();  // criando um objeto da classe Menu
+        x.setVisible(true);  // deixando vis�vel a classe Menu (objeto x)
+    }//GEN-LAST:event_btnVoltarCadMedicamentoActionPerformed
+
+    private void btnLimparCadMedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparCadMedicamentoActionPerformed
+
+        //limpar(); //chamando o metodo limpar
+    }//GEN-LAST:event_btnLimparCadMedicamentoActionPerformed
+
+    private void btnGravarCadMedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGravarCadMedicamentoActionPerformed
+
+        // limpar(); // limpar os campos - chamando o m�todo limpar
+
+        // JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!!!");
+    }//GEN-LAST:event_btnGravarCadMedicamentoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -82,5 +419,46 @@ public class Tela_CadMedicamento extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAddComposicao;
+    private javax.swing.JButton btnGravarCadMedicamento;
+    private javax.swing.JButton btnLimparCadMedicamento;
+    private javax.swing.JButton btnVoltarCadMedicamento;
+    private javax.swing.JComboBox<String> cbDosagemComposicao;
+    private javax.swing.JComboBox<String> cbDosagemMedicamento;
+    private javax.swing.JCheckBox checkManipulado;
+    private javax.swing.JCheckBox checkVendaControlada;
+    private javax.swing.JCheckBox checkVendaLivre;
+    private javax.swing.JCheckBox checkVendaRestrita;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tabelMedicamentoComposicao;
+    private javax.swing.JTextField txtApresentacao;
+    private javax.swing.JTextField txtCodMedicamento;
+    private javax.swing.JTextField txtComposicao;
+    private javax.swing.JTextField txtDataCadMedicamento;
+    private javax.swing.JTextField txtFormaFarmaceutica;
+    private javax.swing.JTextField txtNomeComercial;
+    private javax.swing.JTextField txtNomeLaboratorio;
+    private javax.swing.JTextField txtNomeQuimico;
+    private javax.swing.JTextField txtQtdeComposicao;
+    private javax.swing.JTextField txtResponsavelCadMedicamento;
+    private javax.swing.JTextField txtTipoComposicao;
+    private javax.swing.JTextField txtTipoMedicamento;
     // End of variables declaration//GEN-END:variables
 }
