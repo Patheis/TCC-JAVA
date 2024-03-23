@@ -38,6 +38,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de monitoramento de medicacao - V.01\n");
         setIconImages(null);
+        setPreferredSize(new java.awt.Dimension(600, 500));
         setResizable(false);
 
         jMenu1.setText("Cadastro");
@@ -133,7 +134,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 469, Short.MAX_VALUE)
+            .addGap(0, 468, Short.MAX_VALUE)
         );
 
         pack();
