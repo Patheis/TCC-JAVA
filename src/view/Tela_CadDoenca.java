@@ -49,10 +49,7 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-<<<<<<< HEAD
         setTitle("Cadastro de Doencas - Sistema de monitoramento de medicacao - V.01 ");
-=======
->>>>>>> origin/master
         setPreferredSize(new java.awt.Dimension(600, 500));
         setResizable(false);
 
@@ -98,11 +95,7 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
 
         jButton2.setText("Limpar tabela");
 
-<<<<<<< HEAD
-        jLabel6.setText("Cadastro de doenças");
-=======
         jLabel6.setText("Cadastro de doença e comorbidade");
->>>>>>> origin/master
 
         btnGravarCadDoenca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         btnGravarCadDoenca.setText("GRAVAR");
@@ -282,10 +275,8 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Tela_CadDoenca().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Tela_CadDoenca().setVisible(true);
         });
     }
 

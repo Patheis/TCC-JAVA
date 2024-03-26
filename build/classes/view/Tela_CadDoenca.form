@@ -7,10 +7,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-<<<<<<< HEAD
     <Property name="title" type="java.lang.String" value="Cadastro de Doencas - Sistema de monitoramento de medicacao - V.01 "/>
-=======
->>>>>>> origin/master
     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[600, 500]"/>
     </Property>
@@ -300,11 +297,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
-<<<<<<< HEAD
-        <Property name="text" type="java.lang.String" value="Cadastro de doen&#xe7;as"/>
-=======
         <Property name="text" type="java.lang.String" value="Cadastro de doen&#xe7;a e comorbidade"/>
->>>>>>> origin/master
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnGravarCadDoenca">
