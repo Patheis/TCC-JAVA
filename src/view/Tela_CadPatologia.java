@@ -8,12 +8,12 @@ package view;
  *
  * @author balan
  */
-public class Tela_CadDoenca extends javax.swing.JFrame {
+public class Tela_CadPatologia extends javax.swing.JFrame {
 
     /**
      * Creates new form Tela_CadDoenca
      */
-    public Tela_CadDoenca() {
+    public Tela_CadPatologia() {
         initComponents();
     }
 
@@ -49,8 +49,7 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Cadastro de Doencas - Sistema de monitoramento de medicacao - V.01 ");
-        setPreferredSize(new java.awt.Dimension(600, 500));
+        setTitle("Cadastro de Patologias - Sistema de monitoramento de medicacao - V.01 ");
         setResizable(false);
 
         jLabel1.setText("Classificação CID");
@@ -70,6 +69,11 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
         jLabel4.setText("Grau de contágio");
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Nenhum", "Baixo", "Moderado", "Alto", "Grave", "Letal" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
 
         jLabel5.setText("Restrição à medicamentos");
 
@@ -95,7 +99,7 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
 
         jButton2.setText("Limpar tabela");
 
-        jLabel6.setText("Cadastro de doença e comorbidade");
+        jLabel6.setText("Cadastro de patologia");
 
         btnGravarCadDoenca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         btnGravarCadDoenca.setText("GRAVAR");
@@ -247,6 +251,10 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -264,19 +272,22 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tela_CadDoenca.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tela_CadPatologia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tela_CadDoenca.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tela_CadPatologia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tela_CadDoenca.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tela_CadPatologia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tela_CadDoenca.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tela_CadPatologia.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> {
-            new Tela_CadDoenca().setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Tela_CadPatologia().setVisible(true);
+            }
         });
     }
 

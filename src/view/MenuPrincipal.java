@@ -27,6 +27,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         Cad_Pacientes = new javax.swing.JMenuItem();
         Cad_Medicamentos = new javax.swing.JMenuItem();
+        Cad_Doenca = new javax.swing.JMenuItem();
+        Cad_Patologia = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         Cad_Medicar = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
@@ -65,6 +67,26 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
         jMenu1.add(Cad_Medicamentos);
+
+        Cad_Doenca.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Cad_Doenca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-vírus-16.png"))); // NOI18N
+        Cad_Doenca.setText("Doencas");
+        Cad_Doenca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Cad_DoencaActionPerformed(evt);
+            }
+        });
+        jMenu1.add(Cad_Doenca);
+
+        Cad_Patologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Cad_Patologia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-anatomy-16.png"))); // NOI18N
+        Cad_Patologia.setText("Patologia");
+        Cad_Patologia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Cad_PatologiaActionPerformed(evt);
+            }
+        });
+        jMenu1.add(Cad_Patologia);
 
         jMenuBar1.add(jMenu1);
 
@@ -177,6 +199,18 @@ public class MenuPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Cad_MedicarActionPerformed
 
+    private void Cad_DoencaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_DoencaActionPerformed
+         dispose();
+        Tela_CadDoenca Sz = new Tela_CadDoenca();
+        Sz.setVisible(true);
+    }//GEN-LAST:event_Cad_DoencaActionPerformed
+
+    private void Cad_PatologiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_PatologiaActionPerformed
+        dispose();
+        Tela_CadPatologia Sz = new Tela_CadPatologia();
+        Sz.setVisible(true);
+    }//GEN-LAST:event_Cad_PatologiaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -214,9 +248,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem Cad_Doenca;
     private javax.swing.JMenuItem Cad_Medicamentos;
     private javax.swing.JMenuItem Cad_Medicar;
     private javax.swing.JMenuItem Cad_Pacientes;
+    private javax.swing.JMenuItem Cad_Patologia;
     private javax.swing.JMenuItem Gera_Relat_Med;
     private javax.swing.JMenuItem Gera_Relat_Paciente;
     private javax.swing.JMenu jMenu1;
