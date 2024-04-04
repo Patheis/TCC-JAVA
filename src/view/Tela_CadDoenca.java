@@ -49,7 +49,6 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Cadastro de Doencas - Sistema de monitoramento de medicacao - V.01 ");
         setPreferredSize(new java.awt.Dimension(600, 500));
         setResizable(false);
 
@@ -275,8 +274,10 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> {
-            new Tela_CadDoenca().setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Tela_CadDoenca().setVisible(true);
+            }
         });
     }
 
