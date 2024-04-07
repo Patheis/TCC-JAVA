@@ -102,14 +102,14 @@ public class Tela_CadPaciente extends javax.swing.JFrame {
         jLabel24 = new javax.swing.JLabel();
         rbVicioSim = new javax.swing.JRadioButton();
         rbVicioNao = new javax.swing.JRadioButton();
-        jLabel35 = new javax.swing.JLabel();
-        rbCondicaoMentalSim = new javax.swing.JRadioButton();
-        rbCondicaoMentalNao = new javax.swing.JRadioButton();
-        txtCondicaoMentalPaciente = new javax.swing.JTextField();
         jLabel39 = new javax.swing.JLabel();
         rbCondicaoMentalSim1 = new javax.swing.JRadioButton();
         rbCondicaoMentalNao1 = new javax.swing.JRadioButton();
         cbDeficienciaPaciente = new javax.swing.JComboBox<>();
+        txtCondicaoMentalPaciente = new javax.swing.JTextField();
+        rbCondicaoMentalNao = new javax.swing.JRadioButton();
+        rbCondicaoMentalSim = new javax.swing.JRadioButton();
+        jLabel35 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel34 = new javax.swing.JLabel();
         txtConvenioPaciente = new javax.swing.JTextField();
@@ -666,19 +666,6 @@ public class Tela_CadPaciente extends javax.swing.JFrame {
         rbVicioNao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         rbVicioNao.setText("Não");
 
-        jLabel35.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel35.setText("Condição mental?");
-
-        buttonGroupProblemaMental.add(rbCondicaoMentalSim);
-        rbCondicaoMentalSim.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        rbCondicaoMentalSim.setText("Sim");
-
-        buttonGroupProblemaMental.add(rbCondicaoMentalNao);
-        rbCondicaoMentalNao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        rbCondicaoMentalNao.setText("Não");
-
-        txtCondicaoMentalPaciente.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-
         jLabel39.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel39.setText("Deficiência?");
 
@@ -693,6 +680,19 @@ public class Tela_CadPaciente extends javax.swing.JFrame {
         cbDeficienciaPaciente.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         cbDeficienciaPaciente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Auditivo", "Mental", "Intelectual", "Visual", "Sensorial", "Múltiplas deficiências" }));
 
+        txtCondicaoMentalPaciente.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+
+        buttonGroupProblemaMental.add(rbCondicaoMentalNao);
+        rbCondicaoMentalNao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        rbCondicaoMentalNao.setText("Não");
+
+        buttonGroupProblemaMental.add(rbCondicaoMentalSim);
+        rbCondicaoMentalSim.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        rbCondicaoMentalSim.setText("Sim");
+
+        jLabel35.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel35.setText("Condição mental?");
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -701,21 +701,13 @@ public class Tela_CadPaciente extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel35)
-                        .addGap(2, 2, 2)
-                        .addComponent(rbCondicaoMentalSim)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbCondicaoMentalNao)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtCondicaoMentalPaciente))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel39)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(rbCondicaoMentalSim1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(rbCondicaoMentalNao1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cbDeficienciaPaciente, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(cbDeficienciaPaciente, 0, 362, Short.MAX_VALUE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -731,7 +723,15 @@ public class Tela_CadPaciente extends javax.swing.JFrame {
                                 .addComponent(rbVicioSim)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(rbVicioNao)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabel35)
+                        .addGap(2, 2, 2)
+                        .addComponent(rbCondicaoMentalSim)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rbCondicaoMentalNao)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtCondicaoMentalPaciente)))
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
@@ -746,11 +746,10 @@ public class Tela_CadPaciente extends javax.swing.JFrame {
                     .addComponent(rbAlcoolatraNao))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel35)
-                    .addComponent(rbCondicaoMentalSim)
-                    .addComponent(rbCondicaoMentalNao)
-                    .addComponent(txtCondicaoMentalPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jLabel24)
+                    .addComponent(rbVicioSim)
+                    .addComponent(rbVicioNao))
+                .addGap(7, 7, 7)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel39)
                     .addComponent(rbCondicaoMentalNao1)
@@ -758,9 +757,10 @@ public class Tela_CadPaciente extends javax.swing.JFrame {
                     .addComponent(cbDeficienciaPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24)
-                    .addComponent(rbVicioSim)
-                    .addComponent(rbVicioNao))
+                    .addComponent(jLabel35)
+                    .addComponent(rbCondicaoMentalSim)
+                    .addComponent(rbCondicaoMentalNao)
+                    .addComponent(txtCondicaoMentalPaciente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 

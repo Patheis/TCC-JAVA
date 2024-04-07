@@ -48,7 +48,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         Cad_Pacientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         Cad_Pacientes.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        Cad_Pacientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pessoas.png"))); // NOI18N
+        Cad_Pacientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-convidado-masculino-16.png"))); // NOI18N
         Cad_Pacientes.setText("Paciente");
         Cad_Pacientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
