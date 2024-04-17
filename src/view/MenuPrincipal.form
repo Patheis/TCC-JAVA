@@ -133,7 +133,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/imagens/icons8-comprimidos-16.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Relatorio de medicamentos"/>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de medicamentos"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Gera_Relat_MedActionPerformed"/>
@@ -147,7 +147,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/imagens/pessoa.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Relatorio de pacientes"/>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de pacientes"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Gera_Relat_PacienteActionPerformed"/>

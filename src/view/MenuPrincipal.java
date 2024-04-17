@@ -121,7 +121,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         Gera_Relat_Med.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         Gera_Relat_Med.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-comprimidos-16.png"))); // NOI18N
-        Gera_Relat_Med.setText("Relatorio de medicamentos");
+        Gera_Relat_Med.setText("Relatório de medicamentos");
         Gera_Relat_Med.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Gera_Relat_MedActionPerformed(evt);
@@ -131,7 +131,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         Gera_Relat_Paciente.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         Gera_Relat_Paciente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pessoa.png"))); // NOI18N
-        Gera_Relat_Paciente.setText("Relatorio de pacientes");
+        Gera_Relat_Paciente.setText("Relatório de pacientes");
         Gera_Relat_Paciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Gera_Relat_PacienteActionPerformed(evt);
