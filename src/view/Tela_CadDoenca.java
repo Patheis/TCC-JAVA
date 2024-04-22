@@ -55,12 +55,12 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
-        cbComorbidades = new javax.swing.JComboBox<>();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         txtEspecificacaoComorbidade = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         txtEspecificacaoComorbidade1 = new javax.swing.JTextField();
+        txtNomeComorbidade = new javax.swing.JTextField();
         jPanel6 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -293,9 +293,6 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-coração-com-pulso-16.png"))); // NOI18N
         jLabel9.setText("Cadastro de Comorbidades");
 
-        cbComorbidades.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        cbComorbidades.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Câncer", "Diabetes Mellitus ", "Doença cardiovascular ", "Doença hepática crônica ", "Doença inflamatória intestinal", "Doença neurológica crônica", "Doença pulmonar crônica ", "Doença renal crônica", "Hipertensão arterial", "Imunossupressão", "Obesidade ", "Transtornos hematológicos", "Transtornos psiquiátricos graves", "Doenças autoimunes", "Doenças endócrinas" }));
-
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel10.setText("Nome:");
 
@@ -309,6 +306,8 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
 
         txtEspecificacaoComorbidade1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
+        txtNomeComorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -317,20 +316,20 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel9)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jLabel10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cbComorbidades, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtEspecificacaoComorbidade))
+                        .addComponent(jLabel9)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel12)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtEspecificacaoComorbidade1)))
+                        .addComponent(txtEspecificacaoComorbidade1))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtNomeComorbidade, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtEspecificacaoComorbidade)))
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -341,9 +340,9 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
-                    .addComponent(cbComorbidades, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel11)
-                    .addComponent(txtEspecificacaoComorbidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtEspecificacaoComorbidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNomeComorbidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
@@ -521,7 +520,6 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
     private javax.swing.JButton btnVoltarComorbidade;
     private javax.swing.JButton btnVoltarPatologia;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JComboBox<String> cbComorbidades;
     private javax.swing.JComboBox<String> cbGrauContagioPatologia;
     private javax.swing.JComboBox<String> cbTipoPatologia;
     private javax.swing.JLabel jLabel1;
@@ -553,6 +551,7 @@ public class Tela_CadDoenca extends javax.swing.JFrame {
     private javax.swing.JTable tableMedicamentoRestritoPatologia;
     private javax.swing.JTextField txtEspecificacaoComorbidade;
     private javax.swing.JTextField txtEspecificacaoComorbidade1;
+    private javax.swing.JTextField txtNomeComorbidade;
     private javax.swing.JTextField txtNomePatologia;
     private javax.swing.JTextField txtRestringirMedicamentoComorbidade;
     private javax.swing.JTextField txtRestringirMedicamentoPatologia;

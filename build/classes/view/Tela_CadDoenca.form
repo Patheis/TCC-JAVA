@@ -547,23 +547,22 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="cbComorbidades" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtEspecificacaoComorbidade" max="32767" attributes="0"/>
+                                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="txtEspecificacaoComorbidade1" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="txtNomeComorbidade" min="-2" pref="230" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="txtEspecificacaoComorbidade" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -578,9 +577,9 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cbComorbidades" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtEspecificacaoComorbidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtNomeComorbidade" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -603,35 +602,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Cadastro de Comorbidades"/>
                   </Properties>
-                </Component>
-                <Component class="javax.swing.JComboBox" name="cbComorbidades">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="14" style="1"/>
-                    </Property>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="15">
-                        <StringItem index="0" value="C&#xe2;ncer"/>
-                        <StringItem index="1" value="Diabetes Mellitus "/>
-                        <StringItem index="2" value="Doen&#xe7;a cardiovascular "/>
-                        <StringItem index="3" value="Doen&#xe7;a hep&#xe1;tica cr&#xf4;nica "/>
-                        <StringItem index="4" value="Doen&#xe7;a inflamat&#xf3;ria intestinal"/>
-                        <StringItem index="5" value="Doen&#xe7;a neurol&#xf3;gica cr&#xf4;nica"/>
-                        <StringItem index="6" value="Doen&#xe7;a pulmonar cr&#xf4;nica "/>
-                        <StringItem index="7" value="Doen&#xe7;a renal cr&#xf4;nica"/>
-                        <StringItem index="8" value="Hipertens&#xe3;o arterial"/>
-                        <StringItem index="9" value="Imunossupress&#xe3;o"/>
-                        <StringItem index="10" value="Obesidade "/>
-                        <StringItem index="11" value="Transtornos hematol&#xf3;gicos"/>
-                        <StringItem index="12" value="Transtornos psiqui&#xe1;tricos graves"/>
-                        <StringItem index="13" value="Doen&#xe7;as autoimunes"/>
-                        <StringItem index="14" value="Doen&#xe7;as end&#xf3;crinas"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                  </AuxValues>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel10">
                   <Properties>
@@ -665,6 +635,13 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtEspecificacaoComorbidade1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Segoe UI" size="14" style="1"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtNomeComorbidade">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="14" style="1"/>
