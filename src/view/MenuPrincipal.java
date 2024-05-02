@@ -23,6 +23,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         Cad_Pacientes = new javax.swing.JMenuItem();
@@ -42,6 +43,19 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setTitle("Sistema de monitoramento de medicacao - V.01\n");
         setIconImages(null);
         setResizable(false);
+
+        jDesktopPane1.setPreferredSize(new java.awt.Dimension(600, 650));
+
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 588, Short.MAX_VALUE)
+        );
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 606, Short.MAX_VALUE)
+        );
 
         jMenu1.setText("Cadastro");
         jMenu1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -163,11 +177,17 @@ public class MenuPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 588, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 468, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 606, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -175,9 +195,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Cad_MedicamentosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_MedicamentosActionPerformed
-      dispose();
-        Tela_CadMedicamento S = new Tela_CadMedicamento();
-        S.setVisible(true);
+        Tela_CadMedicamento2 x = new Tela_CadMedicamento2();
+        jDesktopPane1.add(x);
+        x.setVisible(true);
     }//GEN-LAST:event_Cad_MedicamentosActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
@@ -201,13 +221,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_Gera_Relat_PacienteActionPerformed
 
     private void Cad_PacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_PacientesActionPerformed
-        dispose();
-        Tela_CadPaciente S = new Tela_CadPaciente();
-        S.setVisible(true);
+        Tela_CadPaciente2 x = new Tela_CadPaciente2();
+        jDesktopPane1.add(x);
+        x.setVisible(true);
     }//GEN-LAST:event_Cad_PacientesActionPerformed
 
     private void Cad_MedicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_MedicarActionPerformed
-        // TODO add your handling code here:
+        dispose();
+        Tela_Medicar S = new Tela_Medicar();
+        S.setVisible(true);
     }//GEN-LAST:event_Cad_MedicarActionPerformed
 
     private void Cad_DoencaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_DoencaActionPerformed
@@ -217,17 +239,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_Cad_DoencaActionPerformed
 
     private void Cad_MedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_MedicoActionPerformed
-        // TODO add your handling code here:
-        dispose();
-        Tela_CadMedico S = new Tela_CadMedico();
-        S.setVisible(true);
+        Tela_CadMedico2 x = new Tela_CadMedico2();
+        jDesktopPane1.add(x);
+        x.setVisible(true);
     }//GEN-LAST:event_Cad_MedicoActionPerformed
 
     private void Cad_EnfermeiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_EnfermeiroActionPerformed
-        // TODO add your handling code here:
-        dispose();
-        Tela_CadEnfermeiro S = new Tela_CadEnfermeiro();
-        S.setVisible(true);
+        Tela_CadEnfermeiro2 x = new Tela_CadEnfermeiro2();
+        jDesktopPane1.add(x);
+        x.setVisible(true);
     }//GEN-LAST:event_Cad_EnfermeiroActionPerformed
 
     /**
@@ -275,6 +295,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem Cad_Pacientes;
     private javax.swing.JMenuItem Gera_Relat_Med;
     private javax.swing.JMenuItem Gera_Relat_Paciente;
+    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
