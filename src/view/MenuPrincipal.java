@@ -44,18 +44,21 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setIconImages(null);
         setResizable(false);
 
+        jDesktopPane1.setAutoscrolls(true);
         jDesktopPane1.setPreferredSize(new java.awt.Dimension(600, 650));
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
         jDesktopPane1Layout.setHorizontalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 588, Short.MAX_VALUE)
+            .addGap(0, 719, Short.MAX_VALUE)
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 606, Short.MAX_VALUE)
+            .addGap(0, 633, Short.MAX_VALUE)
         );
+
+        jMenuBar1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jMenu1.setText("Cadastro");
         jMenu1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -179,14 +182,14 @@ public class MenuPrincipal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 588, Short.MAX_VALUE)
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 719, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 606, Short.MAX_VALUE)
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 633, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -227,15 +230,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_Cad_PacientesActionPerformed
 
     private void Cad_MedicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_MedicarActionPerformed
-        dispose();
-        Tela_Medicar S = new Tela_Medicar();
-        S.setVisible(true);
+        Tela_Medicar2 x = new Tela_Medicar2();
+        jDesktopPane1.add(x);
+        x.setVisible(true);
     }//GEN-LAST:event_Cad_MedicarActionPerformed
 
     private void Cad_DoencaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_DoencaActionPerformed
-        dispose();
-        Tela_CadDoenca ZS = new Tela_CadDoenca();
-        ZS.setVisible(true);
+        Tela_CadDoenca2 x = new Tela_CadDoenca2();
+        jDesktopPane1.add(x);
+        x.setVisible(true);
     }//GEN-LAST:event_Cad_DoencaActionPerformed
 
     private void Cad_MedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_MedicoActionPerformed
