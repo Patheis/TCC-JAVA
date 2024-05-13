@@ -63,7 +63,6 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
         cbDosagemComposicaoMedicamento = new javax.swing.JComboBox<>();
         btnAdicionarMedicamento = new javax.swing.JButton();
         btnLimparTabelaMedicamento = new javax.swing.JButton();
-        btnVoltarCadMedicamento = new javax.swing.JButton();
         btnGravarCadMedicamento = new javax.swing.JButton();
 
         setClosable(true);
@@ -103,14 +102,6 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNomePopularMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtFabricanteMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -121,7 +112,15 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
                         .addComponent(txtNomeQuimicoMedicamento))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtNomePopularMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtFabricanteMedicamento)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -195,7 +194,7 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel10)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cbDosagemMedicamento, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(cbDosagemMedicamento, 0, 131, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -334,15 +333,6 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        btnVoltarCadMedicamento.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnVoltarCadMedicamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/sair.png"))); // NOI18N
-        btnVoltarCadMedicamento.setText("VOLTAR");
-        btnVoltarCadMedicamento.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVoltarCadMedicamentoActionPerformed(evt);
-            }
-        });
-
         btnGravarCadMedicamento.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnGravarCadMedicamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         btnGravarCadMedicamento.setText("GRAVAR");
@@ -364,8 +354,6 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnVoltarCadMedicamento)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnGravarCadMedicamento)))
                 .addContainerGap())
         );
@@ -379,9 +367,7 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnVoltarCadMedicamento)
-                    .addComponent(btnGravarCadMedicamento))
+                .addComponent(btnGravarCadMedicamento)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -391,7 +377,7 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 602, Short.MAX_VALUE)
+            .addComponent(jScrollPane2)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -400,13 +386,6 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnVoltarCadMedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarCadMedicamentoActionPerformed
-
-        dispose(); // fechando a tela atual
-        MenuPrincipal x = new MenuPrincipal();  // criando um objeto da classe Menu
-        x.setVisible(true);  // deixando vis�vel a classe Menu (objeto x)
-    }//GEN-LAST:event_btnVoltarCadMedicamentoActionPerformed
 
     private void btnGravarCadMedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGravarCadMedicamentoActionPerformed
 
@@ -420,7 +399,6 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnAdicionarMedicamento;
     private javax.swing.JButton btnGravarCadMedicamento;
     private javax.swing.JButton btnLimparTabelaMedicamento;
-    private javax.swing.JButton btnVoltarCadMedicamento;
     private javax.swing.JComboBox<String> cbDosagemComposicaoMedicamento;
     private javax.swing.JComboBox<String> cbDosagemMedicamento;
     private javax.swing.JComboBox<String> cbTipoVendaMedicamento;
