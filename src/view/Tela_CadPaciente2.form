@@ -640,7 +640,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="txtCelularPaciente" min="-2" pref="100" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
                                       <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
@@ -651,7 +651,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtTelefoneOpcionalPaciente" max="32767" attributes="0"/>
+                                      <Component id="txtemailPaciente" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
@@ -675,7 +675,7 @@
                                   <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="txtTelefonePaciente" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtTelefoneOpcionalPaciente" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtemailPaciente" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
@@ -744,10 +744,10 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="14" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Telefone (opcional):"/>
+                        <Property name="text" type="java.lang.String" value="E-mail:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="txtTelefoneOpcionalPaciente">
+                    <Component class="javax.swing.JTextField" name="txtemailPaciente">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="14" style="1"/>

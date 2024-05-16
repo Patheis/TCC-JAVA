@@ -71,7 +71,7 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
         jLabel15 = new javax.swing.JLabel();
         txtTelefoneEnfermeiro = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
-        txtTelefoneOpcionalEnfermeiro = new javax.swing.JTextField();
+        txtemailEnfermeiro = new javax.swing.JTextField();
         jPanel9 = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
@@ -366,9 +366,14 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
         txtTelefoneEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel16.setText("Telefone comercial:");
+        jLabel16.setText("E-mail:");
 
-        txtTelefoneOpcionalEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txtemailEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txtemailEnfermeiro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtemailEnfermeiroActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -395,7 +400,7 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtTelefoneOpcionalEnfermeiro)))
+                        .addComponent(txtemailEnfermeiro)))
                 .addContainerGap())
         );
         jPanel8Layout.setVerticalGroup(
@@ -414,7 +419,7 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
                     .addComponent(jLabel15)
                     .addComponent(txtTelefoneEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel16)
-                    .addComponent(txtTelefoneOpcionalEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtemailEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -613,7 +618,7 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 638, Short.MAX_VALUE)
+            .addComponent(jScrollPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -633,6 +638,10 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
 
         // JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!!!");
     }//GEN-LAST:event_btnGravarCadEnfermeiroActionPerformed
+
+    private void txtemailEnfermeiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtemailEnfermeiroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtemailEnfermeiroActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -701,6 +710,6 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
     private javax.swing.JTextField txtRgEnfermeiro;
     private javax.swing.JTextField txtRuaEnfermeiro;
     private javax.swing.JTextField txtTelefoneEnfermeiro;
-    private javax.swing.JTextField txtTelefoneOpcionalEnfermeiro;
+    private javax.swing.JTextField txtemailEnfermeiro;
     // End of variables declaration//GEN-END:variables
 }

@@ -86,7 +86,7 @@ public class Tela_CadMedico2 extends javax.swing.JInternalFrame {
         jLabel15 = new javax.swing.JLabel();
         txtTelefoneMedico = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
-        txtTelefoneOpcionalMedico = new javax.swing.JTextField();
+        txtemailMedico = new javax.swing.JTextField();
         jPanel9 = new javax.swing.JPanel();
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
@@ -472,9 +472,9 @@ public class Tela_CadMedico2 extends javax.swing.JInternalFrame {
         txtTelefoneMedico.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel16.setText("Telefone (opcional):");
+        jLabel16.setText("E-mail:");
 
-        txtTelefoneOpcionalMedico.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txtemailMedico.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -501,7 +501,7 @@ public class Tela_CadMedico2 extends javax.swing.JInternalFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtTelefoneOpcionalMedico)))
+                        .addComponent(txtemailMedico)))
                 .addContainerGap())
         );
         jPanel8Layout.setVerticalGroup(
@@ -520,7 +520,7 @@ public class Tela_CadMedico2 extends javax.swing.JInternalFrame {
                     .addComponent(jLabel15)
                     .addComponent(txtTelefoneMedico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel16)
-                    .addComponent(txtTelefoneOpcionalMedico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtemailMedico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -714,6 +714,6 @@ public class Tela_CadMedico2 extends javax.swing.JInternalFrame {
     private javax.swing.JTextField txtRgMedico;
     private javax.swing.JTextField txtRuaMedico;
     private javax.swing.JTextField txtTelefoneMedico;
-    private javax.swing.JTextField txtTelefoneOpcionalMedico;
+    private javax.swing.JTextField txtemailMedico;
     // End of variables declaration//GEN-END:variables
 }
