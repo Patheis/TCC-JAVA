@@ -63,6 +63,7 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
         cbDosagemComposicaoMedicamento = new javax.swing.JComboBox<>();
         btnAdicionarMedicamento = new javax.swing.JButton();
         btnLimparTabelaMedicamento = new javax.swing.JButton();
+        btnGravarCadMedicamento1 = new javax.swing.JButton();
         btnGravarCadMedicamento = new javax.swing.JButton();
 
         setClosable(true);
@@ -281,6 +282,15 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
         btnLimparTabelaMedicamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/limpar.png"))); // NOI18N
         btnLimparTabelaMedicamento.setText("LIMPAR");
 
+        btnGravarCadMedicamento1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnGravarCadMedicamento1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/buscar.png"))); // NOI18N
+        btnGravarCadMedicamento1.setText("BUSCAR");
+        btnGravarCadMedicamento1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGravarCadMedicamento1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -291,7 +301,7 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel13)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtComposicaoMedicamento)
+                        .addComponent(txtComposicaoMedicamento, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel14)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -306,6 +316,8 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
                     .addComponent(jScrollPane1)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnGravarCadMedicamento1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnLimparTabelaMedicamento)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnAdicionarMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -329,7 +341,8 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAdicionarMedicamento)
-                    .addComponent(btnLimparTabelaMedicamento))
+                    .addComponent(btnLimparTabelaMedicamento)
+                    .addComponent(btnGravarCadMedicamento1))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -368,7 +381,7 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnGravarCadMedicamento)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel2);
@@ -381,7 +394,7 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 622, Short.MAX_VALUE)
         );
 
         pack();
@@ -394,10 +407,15 @@ public class Tela_CadMedicamento2 extends javax.swing.JInternalFrame {
         // JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!!!");
     }//GEN-LAST:event_btnGravarCadMedicamentoActionPerformed
 
+    private void btnGravarCadMedicamento1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGravarCadMedicamento1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGravarCadMedicamento1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdicionarMedicamento;
     private javax.swing.JButton btnGravarCadMedicamento;
+    private javax.swing.JButton btnGravarCadMedicamento1;
     private javax.swing.JButton btnLimparTabelaMedicamento;
     private javax.swing.JComboBox<String> cbDosagemComposicaoMedicamento;
     private javax.swing.JComboBox<String> cbDosagemMedicamento;
