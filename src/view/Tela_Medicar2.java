@@ -31,36 +31,35 @@ public class Tela_Medicar2 extends javax.swing.JInternalFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        cbCodPacienteMedicar = new javax.swing.JComboBox<>();
+        combo_codigo_paciente = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
-        txtCpfMedicar = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        txtNomePacienteMedicar = new javax.swing.JTextField();
+        txt_cpf = new javax.swing.JTextField();
+        txt_nome = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        txtConvenioMedicar = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        cbCodMedicamento = new javax.swing.JComboBox<>();
+        combo_codigo_medicamento = new javax.swing.JComboBox<>();
         jLabel17 = new javax.swing.JLabel();
-        txtNomeMedicamento = new javax.swing.JTextField();
+        txt_nome_medicamento = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        txtDosagemMedicamento = new javax.swing.JTextField();
-        checkManipuladoMedicar = new javax.swing.JCheckBox();
+        txt_dosagem = new javax.swing.JTextField();
+        check_manipulado = new javax.swing.JCheckBox();
         jLabel12 = new javax.swing.JLabel();
-        txtQtdePrescricaoMedicar = new javax.swing.JTextField();
+        txt_qtde_prescrita = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        cbConsumoMedicar = new javax.swing.JComboBox<>();
+        combo_consumir = new javax.swing.JComboBox<>();
         jLabel14 = new javax.swing.JLabel();
-        txtInicioMedicamento = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
-        txtFimMedicamento = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
-        txtObsMedicamentoMedicar = new javax.swing.JTextField();
-        btnAdicionarMedicar = new javax.swing.JButton();
+        txt_observacao = new javax.swing.JTextField();
+        btn_adicionar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableMedicar = new javax.swing.JTable();
-        btnGravarMedicar = new javax.swing.JButton();
+        table_medicar = new javax.swing.JTable();
+        txt_data_inicio = new javax.swing.JFormattedTextField();
+        txt_data_termino = new javax.swing.JFormattedTextField();
+        btn_gravar = new javax.swing.JButton();
+        btn_novo = new javax.swing.JButton();
 
         setClosable(true);
         setMaximizable(true);
@@ -75,26 +74,20 @@ public class Tela_Medicar2 extends javax.swing.JInternalFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("Nome:");
 
-        cbCodPacienteMedicar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        cbCodPacienteMedicar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Buscar" }));
+        combo_codigo_paciente.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        combo_codigo_paciente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Buscar" }));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setText("Código:");
 
-        txtCpfMedicar.setEditable(false);
-        txtCpfMedicar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_cpf.setEditable(false);
+        txt_cpf.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setText("Convênio:");
-
-        txtNomePacienteMedicar.setEditable(false);
-        txtNomePacienteMedicar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_nome.setEditable(false);
+        txt_nome.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setText("CPF:");
-
-        txtConvenioMedicar.setEditable(false);
-        txtConvenioMedicar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -103,28 +96,19 @@ public class Tela_Medicar2 extends javax.swing.JInternalFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtCpfMedicar))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cbCodPacienteMedicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel2)))
+                        .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtConvenioMedicar))
-                            .addComponent(txtNomePacienteMedicar))))
+                        .addComponent(combo_codigo_paciente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txt_nome, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txt_cpf, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -135,15 +119,12 @@ public class Tela_Medicar2 extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(cbCodPacienteMedicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(combo_codigo_paciente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2)
-                    .addComponent(txtNomePacienteMedicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(txtCpfMedicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5)
-                    .addComponent(txtConvenioMedicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_nome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txt_cpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel5)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -156,55 +137,51 @@ public class Tela_Medicar2 extends javax.swing.JInternalFrame {
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setText("Código:");
 
-        cbCodMedicamento.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        cbCodMedicamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Buscar" }));
+        combo_codigo_medicamento.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        combo_codigo_medicamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Buscar" }));
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel17.setText("Nome:");
 
-        txtNomeMedicamento.setEditable(false);
-        txtNomeMedicamento.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_nome_medicamento.setEditable(false);
+        txt_nome_medicamento.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setText("Dosagem:");
 
-        txtDosagemMedicamento.setEditable(false);
-        txtDosagemMedicamento.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_dosagem.setEditable(false);
+        txt_dosagem.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
-        checkManipuladoMedicar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        checkManipuladoMedicar.setText("Manipulado");
+        check_manipulado.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        check_manipulado.setText("Manipulado");
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel12.setText("Quantidade prescrita:");
 
-        txtQtdePrescricaoMedicar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_qtde_prescrita.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel13.setText("Consumir a cada:");
 
-        cbConsumoMedicar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        cbConsumoMedicar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "4hrs", "6hrs", "8hrs", "1 vez ao dia" }));
+        combo_consumir.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        combo_consumir.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "4hrs", "6hrs", "8hrs", "1 vez ao dia", "A cada 15 dias" }));
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel14.setText("Início:");
 
-        txtInicioMedicamento.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel15.setText("Término:");
-
-        txtFimMedicamento.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel16.setText("Observação:");
 
-        txtObsMedicamentoMedicar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_observacao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
-        btnAdicionarMedicar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnAdicionarMedicar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/novo.png"))); // NOI18N
-        btnAdicionarMedicar.setText("ADICIONAR");
+        btn_adicionar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_adicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/novo.png"))); // NOI18N
+        btn_adicionar.setText("ADICIONAR");
 
-        tableMedicar.setModel(new javax.swing.table.DefaultTableModel(
+        table_medicar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -215,7 +192,21 @@ public class Tela_Medicar2 extends javax.swing.JInternalFrame {
                 "Código", "Nome", "Dosagem", "Consumo"
             }
         ));
-        jScrollPane1.setViewportView(tableMedicar);
+        jScrollPane1.setViewportView(table_medicar);
+
+        try {
+            txt_data_inicio.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txt_data_inicio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+
+        try {
+            txt_data_termino.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txt_data_termino.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -226,44 +217,48 @@ public class Tela_Medicar2 extends javax.swing.JInternalFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel13)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cbConsumoMedicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel14)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtInicioMedicamento, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel15)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtFimMedicamento, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel16)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtObsMedicamentoMedicar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnAdicionarMedicar, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cbCodMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(combo_codigo_medicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNomeMedicamento, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addComponent(txt_nome_medicamento))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtDosagemMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txt_dosagem, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(checkManipuladoMedicar)
+                        .addComponent(check_manipulado)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel12)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtQtdePrescricaoMedicar)))
+                        .addComponent(txt_qtde_prescrita))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addGap(124, 124, 124))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(jLabel13)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(combo_consumir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel14)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txt_data_inicio, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel15))
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(jLabel16)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txt_observacao)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txt_data_termino)
+                            .addComponent(btn_adicionar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
@@ -274,40 +269,49 @@ public class Tela_Medicar2 extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(cbCodMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(combo_codigo_medicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel17)
-                    .addComponent(txtNomeMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_nome_medicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtDosagemMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_dosagem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9)
-                    .addComponent(checkManipuladoMedicar)
+                    .addComponent(check_manipulado)
                     .addComponent(jLabel12)
-                    .addComponent(txtQtdePrescricaoMedicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_qtde_prescrita, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
-                    .addComponent(cbConsumoMedicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(combo_consumir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel14)
-                    .addComponent(txtInicioMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel15)
-                    .addComponent(txtFimMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_data_inicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_data_termino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16)
-                    .addComponent(txtObsMedicamentoMedicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAdicionarMedicar))
+                    .addComponent(txt_observacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_adicionar))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        btnGravarMedicar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnGravarMedicar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
-        btnGravarMedicar.setText("GRAVAR");
-        btnGravarMedicar.addActionListener(new java.awt.event.ActionListener() {
+        btn_gravar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_gravar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
+        btn_gravar.setText("GRAVAR");
+        btn_gravar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGravarMedicarActionPerformed(evt);
+                btn_gravarActionPerformed(evt);
+            }
+        });
+
+        btn_novo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_novo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-adicionar-16.png"))); // NOI18N
+        btn_novo.setText("NOVO");
+        btn_novo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_novoActionPerformed(evt);
             }
         });
 
@@ -322,7 +326,9 @@ public class Tela_Medicar2 extends javax.swing.JInternalFrame {
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnGravarMedicar)))
+                        .addComponent(btn_novo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn_gravar)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -333,8 +339,10 @@ public class Tela_Medicar2 extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnGravarMedicar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_novo)
+                    .addComponent(btn_gravar))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel1);
@@ -347,27 +355,32 @@ public class Tela_Medicar2 extends javax.swing.JInternalFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnGravarMedicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGravarMedicarActionPerformed
+    private void btn_gravarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_gravarActionPerformed
 
         // limpar(); // limpar os campos - chamando o m�todo limpar
 
         // JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!!!");
-    }//GEN-LAST:event_btnGravarMedicarActionPerformed
+    }//GEN-LAST:event_btn_gravarActionPerformed
+
+    private void btn_novoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_novoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_novoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAdicionarMedicar;
-    private javax.swing.JButton btnGravarMedicar;
-    private javax.swing.JComboBox<String> cbCodMedicamento;
-    private javax.swing.JComboBox<String> cbCodPacienteMedicar;
-    private javax.swing.JComboBox<String> cbConsumoMedicar;
-    private javax.swing.JCheckBox checkManipuladoMedicar;
+    private javax.swing.JButton btn_adicionar;
+    private javax.swing.JButton btn_gravar;
+    private javax.swing.JButton btn_novo;
+    private javax.swing.JCheckBox check_manipulado;
+    private javax.swing.JComboBox<String> combo_codigo_medicamento;
+    private javax.swing.JComboBox<String> combo_codigo_paciente;
+    private javax.swing.JComboBox<String> combo_consumir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -377,7 +390,6 @@ public class Tela_Medicar2 extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -387,15 +399,14 @@ public class Tela_Medicar2 extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable tableMedicar;
-    private javax.swing.JTextField txtConvenioMedicar;
-    private javax.swing.JTextField txtCpfMedicar;
-    private javax.swing.JTextField txtDosagemMedicamento;
-    private javax.swing.JTextField txtFimMedicamento;
-    private javax.swing.JTextField txtInicioMedicamento;
-    private javax.swing.JTextField txtNomeMedicamento;
-    private javax.swing.JTextField txtNomePacienteMedicar;
-    private javax.swing.JTextField txtObsMedicamentoMedicar;
-    private javax.swing.JTextField txtQtdePrescricaoMedicar;
+    private javax.swing.JTable table_medicar;
+    private javax.swing.JTextField txt_cpf;
+    private javax.swing.JFormattedTextField txt_data_inicio;
+    private javax.swing.JFormattedTextField txt_data_termino;
+    private javax.swing.JTextField txt_dosagem;
+    private javax.swing.JTextField txt_nome;
+    private javax.swing.JTextField txt_nome_medicamento;
+    private javax.swing.JTextField txt_observacao;
+    private javax.swing.JTextField txt_qtde_prescrita;
     // End of variables declaration//GEN-END:variables
 }

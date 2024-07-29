@@ -225,7 +225,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_Gera_Relat_PacienteActionPerformed
 
     private void Cad_PacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_PacientesActionPerformed
-        Tela_CadPaciente2 x = new Tela_CadPaciente2();
+        Tela_CadPaciente x = new Tela_CadPaciente();
         jDesktopPane1.add(x);
         x.setVisible(true);
     }//GEN-LAST:event_Cad_PacientesActionPerformed

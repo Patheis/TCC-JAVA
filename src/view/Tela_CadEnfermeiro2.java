@@ -31,56 +31,59 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
         jPanel6 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        txtCodigoCadEnfermeiro = new javax.swing.JTextField();
+        txt_codigo = new javax.swing.JTextField();
         jLabel27 = new javax.swing.JLabel();
-        txtNomeEnfermeiro = new javax.swing.JTextField();
-        txtNascimentoEnfermeiro = new javax.swing.JTextField();
+        txt_nome = new javax.swing.JTextField();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        cbSexoEnfermeiro = new javax.swing.JComboBox<>();
+        combo_sexo = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
-        cbCorEnfermeiro = new javax.swing.JComboBox<>();
+        combo_cor = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
-        cbEstadoCivilEnfermeiro = new javax.swing.JComboBox<>();
+        combo_estado_civil = new javax.swing.JComboBox<>();
         jLabel28 = new javax.swing.JLabel();
-        txtCpfEnfermeiro = new javax.swing.JTextField();
         jLabel29 = new javax.swing.JLabel();
-        txtRgEnfermeiro = new javax.swing.JTextField();
+        txt_nascimento = new javax.swing.JFormattedTextField();
+        txt_cpf = new javax.swing.JFormattedTextField();
+        txt_rg = new javax.swing.JFormattedTextField();
         jPanel7 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        txtCepEnfermeiro = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        txtCidadeEnfermeiro = new javax.swing.JTextField();
+        txt_cidade = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        cbEstadoEnfermeiro = new javax.swing.JComboBox<>();
+        combo_estado = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
-        txtRuaEnfermeiro = new javax.swing.JTextField();
+        txt_rua = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        txtNumeroCasaEnfermeiro = new javax.swing.JTextField();
+        txt_numero = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        txtBairroEnfermeiro = new javax.swing.JTextField();
+        txt_bairro = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        txtComplementoEnfermeiro = new javax.swing.JTextField();
+        txt_complemento = new javax.swing.JTextField();
+        txt_cep = new javax.swing.JFormattedTextField();
+        btn_buscar_cep = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        txtEmailEnfermeiro = new javax.swing.JTextField();
+        txt_email = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
-        txtTelefoneEnfermeiro = new javax.swing.JTextField();
+        txt_telefone = new javax.swing.JFormattedTextField();
         jPanel3 = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        txtCorenEnfermeiro = new javax.swing.JTextField();
-        cbSituacaoCorenEnfermeiro = new javax.swing.JComboBox<>();
+        combo_situacao_coren = new javax.swing.JComboBox<>();
         jLabel32 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        txtDataInscricaoCorenEnfermeiro = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
-        txtEspecializacaoEnfermeiro = new javax.swing.JTextField();
-        txtAreaAtuacaoEnfermeiro = new javax.swing.JTextField();
+        txt_area_atuacao = new javax.swing.JTextField();
+        txt_especializacao = new javax.swing.JTextField();
+        txt_coren = new javax.swing.JFormattedTextField();
+        txt_data_coren = new javax.swing.JFormattedTextField();
         jLabel19 = new javax.swing.JLabel();
-        btnGravarCadEnfermeiro = new javax.swing.JButton();
+        btn_gravar = new javax.swing.JButton();
+        btn_novo = new javax.swing.JButton();
+        btn_alterar = new javax.swing.JButton();
 
         setClosable(true);
         setMaximizable(true);
@@ -100,14 +103,18 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
         jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel25.setText("Código:");
 
-        txtCodigoCadEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_codigo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_codigo.setEnabled(false);
 
         jLabel27.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel27.setText("Nome completo:");
 
-        txtNomeEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-
-        txtNascimentoEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_nome.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_nome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_nomeActionPerformed(evt);
+            }
+        });
 
         jLabel30.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel30.setText("Data de nascimento:");
@@ -115,30 +122,57 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
         jLabel31.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel31.setText("Sexo:");
 
-        cbSexoEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        cbSexoEnfermeiro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Feminino", "Masculino", "Não informado" }));
+        combo_sexo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        combo_sexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Feminino", "Masculino", "Não informado" }));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setText("Cor:");
 
-        cbCorEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        cbCorEnfermeiro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Branco", "Pardo", "Amarelo", "Indígena", "Preto" }));
+        combo_cor.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        combo_cor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Branco", "Pardo", "Amarelo", "Indígena", "Preto" }));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("Estado Civil:");
 
-        cbEstadoCivilEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        cbEstadoCivilEnfermeiro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Solteiro", "Casado ", "Viúvo", "Divorciado" }));
+        combo_estado_civil.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        combo_estado_civil.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Solteiro", "Casado ", "Viúvo", "Divorciado" }));
 
         jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel28.setText("CPF:");
 
-        txtCpfEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-
         jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel29.setText("RG:");
 
-        txtRgEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        try {
+            txt_nascimento.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txt_nascimento.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+
+        try {
+            txt_cpf.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txt_cpf.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_cpf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_cpfActionPerformed(evt);
+            }
+        });
+
+        try {
+            txt_rg.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##.###.###-#")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txt_rg.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_rg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_rgActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -148,45 +182,40 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(538, 538, 538))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(jLabel25)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtCodigoCadEnfermeiro, javax.swing.GroupLayout.DEFAULT_SIZE, 66, Short.MAX_VALUE)
+                        .addComponent(txt_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel27)
-                        .addGap(370, 370, 370))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(jLabel31)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cbSexoEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cbCorEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cbEstadoCivilEnfermeiro, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addComponent(jLabel30)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtNascimentoEnfermeiro)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel28)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtCpfEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel29)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtRgEnfermeiro))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(txtNomeEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap())))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txt_nome))
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel4)
+                        .addGroup(jPanel6Layout.createSequentialGroup()
+                            .addComponent(jLabel31)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(combo_sexo, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(combo_cor, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(10, 10, 10)
+                            .addComponent(jLabel2)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(combo_estado_civil, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(jPanel6Layout.createSequentialGroup()
+                            .addComponent(jLabel30)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txt_nascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel28)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txt_cpf, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel29)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txt_rg, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(22, 22, 22))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -196,27 +225,25 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel25)
-                    .addComponent(txtCodigoCadEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel27)
-                    .addComponent(txtNomeEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_nome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel28)
-                        .addComponent(txtCpfEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel29)
-                        .addComponent(txtRgEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtNascimentoEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel30)))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel30)
+                    .addComponent(txt_nascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel28)
+                    .addComponent(jLabel29)
+                    .addComponent(txt_cpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_rg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(14, 14, 14)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel31)
-                    .addComponent(cbSexoEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(combo_sexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1)
-                    .addComponent(cbCorEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(combo_cor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2)
-                    .addComponent(cbEstadoCivilEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(combo_estado_civil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(9, Short.MAX_VALUE))
         );
 
@@ -229,38 +256,56 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setText("CEP:");
 
-        txtCepEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel8.setText("Cidade:");
 
-        txtCidadeEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_cidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setText("Estado:");
 
-        cbEstadoEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        cbEstadoEnfermeiro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AL  ", "AM  ", "AP  ", "BA  ", "CE  ", "DF  ", "ES  ", "GO  ", "MA  ", "MG  ", "MS  ", "MT  ", "PA  ", "PB  ", "PE  ", "PI  ", "PR  ", "RJ  ", "RN  ", "RO  ", "RR  ", "RS  ", "SC  ", "SE  ", "SP  ", "TO" }));
+        combo_estado.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        combo_estado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AL  ", "AM  ", "AP  ", "BA  ", "CE  ", "DF  ", "ES  ", "GO  ", "MA  ", "MG  ", "MS  ", "MT  ", "PA  ", "PB  ", "PE  ", "PI  ", "PR  ", "RJ  ", "RN  ", "RO  ", "RR  ", "RS  ", "SC  ", "SE  ", "SP  ", "TO" }));
+        combo_estado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                combo_estadoActionPerformed(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setText("Rua:");
 
-        txtRuaEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_rua.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setText("Número:");
 
-        txtNumeroCasaEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_numero.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel10.setText("Bairro:");
 
-        txtBairroEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_bairro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel11.setText("Complemento:");
 
-        txtComplementoEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_complemento.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+
+        try {
+            txt_cep.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##.###-###")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txt_cep.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+
+        btn_buscar_cep.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_buscar_cep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/buscar.png"))); // NOI18N
+        btn_buscar_cep.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_buscar_cepActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -274,32 +319,34 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
                             .addGroup(jPanel7Layout.createSequentialGroup()
                                 .addComponent(jLabel6)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtCepEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txt_cep, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btn_buscar_cep, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel8)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtCidadeEnfermeiro))
+                                .addComponent(txt_cidade))
                             .addGroup(jPanel7Layout.createSequentialGroup()
                                 .addComponent(jLabel5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtRuaEnfermeiro))
+                                .addComponent(txt_rua))
                             .addGroup(jPanel7Layout.createSequentialGroup()
                                 .addComponent(jLabel10)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtBairroEnfermeiro)
+                                .addComponent(txt_bairro)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel11)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtComplementoEnfermeiro, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txt_complemento, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel7Layout.createSequentialGroup()
                                 .addComponent(jLabel9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtNumeroCasaEnfermeiro))
+                                .addComponent(txt_numero))
                             .addGroup(jPanel7Layout.createSequentialGroup()
                                 .addComponent(jLabel7)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cbEstadoEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(combo_estado, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -311,24 +358,26 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(txtCepEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
-                    .addComponent(txtCidadeEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7)
-                    .addComponent(cbEstadoEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel6)
+                        .addComponent(jLabel8)
+                        .addComponent(txt_cidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel7)
+                        .addComponent(combo_estado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txt_cep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btn_buscar_cep, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(txtRuaEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_rua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9)
-                    .addComponent(txtNumeroCasaEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_numero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtComplementoEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_complemento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel11)
-                    .addComponent(txtBairroEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_bairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -342,12 +391,17 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel13.setText("E-mail:");
 
-        txtEmailEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_email.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel15.setText("Telefone:");
 
-        txtTelefoneEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        try {
+            txt_telefone.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("(##)#####-####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txt_telefone.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -359,11 +413,11 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel13)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtEmailEnfermeiro)
+                        .addComponent(txt_email)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel15)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtTelefoneEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txt_telefone, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel12)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -377,9 +431,9 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
-                    .addComponent(txtEmailEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtTelefoneEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel15))
+                    .addComponent(txt_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel15)
+                    .addComponent(txt_telefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -392,10 +446,8 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
         jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel20.setText("COREN:");
 
-        txtCorenEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-
-        cbSituacaoCorenEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        cbSituacaoCorenEnfermeiro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ativo", "Inativo", "Inválido", "Vencido", "Outro" }));
+        combo_situacao_coren.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        combo_situacao_coren.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ativo", "Inativo", "Inválido", "Vencido", "Outro" }));
 
         jLabel32.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel32.setText("Situação:");
@@ -403,14 +455,26 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
         jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel22.setText("Data de inscrição:");
 
-        txtDataInscricaoCorenEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-
         jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel18.setText("Especialização:");
 
-        txtEspecializacaoEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_area_atuacao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
-        txtAreaAtuacaoEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_especializacao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+
+        try {
+            txt_coren.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txt_coren.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+
+        try {
+            txt_data_coren.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txt_data_coren.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel19.setText("Área de atuação:");
@@ -421,31 +485,31 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel21)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel20)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtCorenEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txt_coren, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel32)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cbSituacaoCorenEnfermeiro, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(combo_situacao_coren, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel22)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtDataInscricaoCorenEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel21)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addComponent(txt_data_coren, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel18)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtEspecializacaoEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txt_especializacao, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel19)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtAreaAtuacaoEnfermeiro)))
-                .addContainerGap())
+                        .addComponent(txt_area_atuacao, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(309, 309, 309))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -455,26 +519,44 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel20)
-                    .addComponent(txtCorenEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel32)
-                    .addComponent(cbSituacaoCorenEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(combo_situacao_coren, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_coren, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel22)
-                    .addComponent(txtDataInscricaoCorenEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_data_coren, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18)
-                    .addComponent(txtEspecializacaoEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtAreaAtuacaoEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_area_atuacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_especializacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel19))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        btnGravarCadEnfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnGravarCadEnfermeiro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
-        btnGravarCadEnfermeiro.setText("GRAVAR");
-        btnGravarCadEnfermeiro.addActionListener(new java.awt.event.ActionListener() {
+        btn_gravar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_gravar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
+        btn_gravar.setText("GRAVAR");
+        btn_gravar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGravarCadEnfermeiroActionPerformed(evt);
+                btn_gravarActionPerformed(evt);
+            }
+        });
+
+        btn_novo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_novo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-adicionar-16.png"))); // NOI18N
+        btn_novo.setText("NOVO");
+        btn_novo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_novoActionPerformed(evt);
+            }
+        });
+
+        btn_alterar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_alterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
+        btn_alterar.setText("ALTERAR");
+        btn_alterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_alterarActionPerformed(evt);
             }
         });
 
@@ -486,13 +568,17 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnGravarCadEnfermeiro))
-                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                        .addComponent(btn_alterar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn_novo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn_gravar))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                .addContainerGap(209, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -506,7 +592,10 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnGravarCadEnfermeiro, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_gravar, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_novo, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_alterar, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(164, Short.MAX_VALUE))
         );
 
@@ -516,11 +605,11 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 618, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 511, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE)
         );
 
         pack();
@@ -530,21 +619,52 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel4HierarchyChanged
 
-    private void btnGravarCadEnfermeiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGravarCadEnfermeiroActionPerformed
+    private void btn_gravarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_gravarActionPerformed
 
         // limpar(); // limpar os campos - chamando o m�todo limpar
 
         // JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!!!");
-    }//GEN-LAST:event_btnGravarCadEnfermeiroActionPerformed
+    }//GEN-LAST:event_btn_gravarActionPerformed
+
+    private void btn_novoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_novoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_novoActionPerformed
+
+    private void btn_buscar_cepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscar_cepActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_buscar_cepActionPerformed
+
+    private void btn_alterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_alterarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_alterarActionPerformed
+
+    private void txt_nomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_nomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_nomeActionPerformed
+
+    private void txt_cpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_cpfActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_cpfActionPerformed
+
+    private void txt_rgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_rgActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_rgActionPerformed
+
+    private void combo_estadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_combo_estadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_combo_estadoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnGravarCadEnfermeiro;
-    private javax.swing.JComboBox<String> cbCorEnfermeiro;
-    private javax.swing.JComboBox<String> cbEstadoCivilEnfermeiro;
-    private javax.swing.JComboBox<String> cbEstadoEnfermeiro;
-    private javax.swing.JComboBox<String> cbSexoEnfermeiro;
-    private javax.swing.JComboBox<String> cbSituacaoCorenEnfermeiro;
+    private javax.swing.JButton btn_alterar;
+    private javax.swing.JButton btn_buscar_cep;
+    private javax.swing.JButton btn_gravar;
+    private javax.swing.JButton btn_novo;
+    private javax.swing.JComboBox<String> combo_cor;
+    private javax.swing.JComboBox<String> combo_estado;
+    private javax.swing.JComboBox<String> combo_estado_civil;
+    private javax.swing.JComboBox<String> combo_sexo;
+    private javax.swing.JComboBox<String> combo_situacao_coren;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -577,22 +697,22 @@ public class Tela_CadEnfermeiro2 extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField txtAreaAtuacaoEnfermeiro;
-    private javax.swing.JTextField txtBairroEnfermeiro;
-    private javax.swing.JTextField txtCepEnfermeiro;
-    private javax.swing.JTextField txtCidadeEnfermeiro;
-    private javax.swing.JTextField txtCodigoCadEnfermeiro;
-    private javax.swing.JTextField txtComplementoEnfermeiro;
-    private javax.swing.JTextField txtCorenEnfermeiro;
-    private javax.swing.JTextField txtCpfEnfermeiro;
-    private javax.swing.JTextField txtDataInscricaoCorenEnfermeiro;
-    private javax.swing.JTextField txtEmailEnfermeiro;
-    private javax.swing.JTextField txtEspecializacaoEnfermeiro;
-    private javax.swing.JTextField txtNascimentoEnfermeiro;
-    private javax.swing.JTextField txtNomeEnfermeiro;
-    private javax.swing.JTextField txtNumeroCasaEnfermeiro;
-    private javax.swing.JTextField txtRgEnfermeiro;
-    private javax.swing.JTextField txtRuaEnfermeiro;
-    private javax.swing.JTextField txtTelefoneEnfermeiro;
+    private javax.swing.JTextField txt_area_atuacao;
+    private javax.swing.JTextField txt_bairro;
+    private javax.swing.JFormattedTextField txt_cep;
+    private javax.swing.JTextField txt_cidade;
+    private javax.swing.JTextField txt_codigo;
+    private javax.swing.JTextField txt_complemento;
+    private javax.swing.JFormattedTextField txt_coren;
+    private javax.swing.JFormattedTextField txt_cpf;
+    private javax.swing.JFormattedTextField txt_data_coren;
+    private javax.swing.JTextField txt_email;
+    private javax.swing.JTextField txt_especializacao;
+    private javax.swing.JFormattedTextField txt_nascimento;
+    private javax.swing.JTextField txt_nome;
+    private javax.swing.JTextField txt_numero;
+    private javax.swing.JFormattedTextField txt_rg;
+    private javax.swing.JTextField txt_rua;
+    private javax.swing.JFormattedTextField txt_telefone;
     // End of variables declaration//GEN-END:variables
 }

@@ -32,43 +32,44 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        txtNomePatologia = new javax.swing.JTextField();
+        txt_nome_patologia = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        rbContagiosaSim = new javax.swing.JRadioButton();
-        rbContagiosaNao = new javax.swing.JRadioButton();
+        rb_contagiosa_sim = new javax.swing.JRadioButton();
+        rb_contagiosa_nao = new javax.swing.JRadioButton();
         jLabel4 = new javax.swing.JLabel();
-        cbGrauContagioPatologia = new javax.swing.JComboBox<>();
-        txtSintomaPatologia = new javax.swing.JTextField();
+        combo_contagio = new javax.swing.JComboBox<>();
+        txt_sintoma_patologia = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        cbTipoPatologia = new javax.swing.JComboBox<>();
+        combo_tipo_patologia = new javax.swing.JComboBox<>();
         jPanel3 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        txtRestringirMedicamentoPatologia = new javax.swing.JTextField();
-        btnIncluirRestringirMedicamentoPatologia = new javax.swing.JButton();
+        btn_incluir_restringir_patologia = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableMedicamentoRestritoPatologia = new javax.swing.JTable();
-        btnLimparTabelaPatologia = new javax.swing.JButton();
-        btnGravarPatologia = new javax.swing.JButton();
+        table_restringir_patologia = new javax.swing.JTable();
+        btn_limpar_tabela_patologia = new javax.swing.JButton();
+        combo_restringir_patologia = new javax.swing.JComboBox<>();
+        btn_gravar_patologia = new javax.swing.JButton();
+        btn_novo_patologia = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        txtEspecificacaoComorbidade = new javax.swing.JTextField();
+        txt_especificacao = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        txtEspecificacaoComorbidade1 = new javax.swing.JTextField();
-        txtNomeComorbidade = new javax.swing.JTextField();
+        txt_observacao = new javax.swing.JTextField();
+        txt_nome_comorbidade = new javax.swing.JTextField();
         jPanel6 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        txtRestringirMedicamentoComorbidade = new javax.swing.JTextField();
-        btnRestringirMedicamentoComorbidade = new javax.swing.JButton();
+        btn_incluir_restringir_comorbidade = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
-        tableMedicamentoRestritoComorbidade = new javax.swing.JTable();
-        btnLimparTabelaComorbidade = new javax.swing.JButton();
-        btnVoltarComorbidade = new javax.swing.JButton();
-        btnGravarComorbidade = new javax.swing.JButton();
+        table_restringir_comorbidade = new javax.swing.JTable();
+        btn_limpar_tabela_comorbidade = new javax.swing.JButton();
+        combo_restringir_comorbidade = new javax.swing.JComboBox<>();
+        btn_novo_comorbidade = new javax.swing.JButton();
+        txt_gravar_comorbidade = new javax.swing.JButton();
 
         setClosable(true);
         setMaximizable(true);
@@ -89,30 +90,35 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("Sintoma:");
 
-        txtNomePatologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_nome_patologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setText("Contagiosa?");
 
-        rbContagiosaSim.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        rbContagiosaSim.setText("Sim");
+        rb_contagiosa_sim.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        rb_contagiosa_sim.setText("Sim");
 
-        rbContagiosaNao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        rbContagiosaNao.setText("Não");
+        rb_contagiosa_nao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        rb_contagiosa_nao.setText("Não");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setText("Grau de contágio:");
 
-        cbGrauContagioPatologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        cbGrauContagioPatologia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nenhum", "Baixo", "Moderado", "Alto", "Grave", "Letal" }));
+        combo_contagio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        combo_contagio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nenhum", "Baixo", "Moderado", "Alto", "Grave", "Letal" }));
 
-        txtSintomaPatologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_sintoma_patologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel8.setText("Tipo:");
 
-        cbTipoPatologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        cbTipoPatologia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bactéria", "Fungo", "Vírus", "Outro" }));
+        combo_tipo_patologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        combo_tipo_patologia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bactéria", "Fungo", "Vírus", "Outro" }));
+        combo_tipo_patologia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                combo_tipo_patologiaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -124,28 +130,28 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbContagiosaSim)
+                        .addComponent(rb_contagiosa_sim)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbContagiosaNao)
+                        .addComponent(rb_contagiosa_nao)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cbGrauContagioPatologia, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(combo_contagio, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNomePatologia, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txt_nome_patologia, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cbTipoPatologia, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(combo_tipo_patologia, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel6)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtSintomaPatologia)))
+                        .addComponent(txt_sintoma_patologia)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -156,20 +162,20 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(txtNomePatologia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_nome_patologia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8)
-                    .addComponent(cbTipoPatologia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(combo_tipo_patologia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(txtSintomaPatologia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_sintoma_patologia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(rbContagiosaSim)
-                    .addComponent(rbContagiosaNao)
+                    .addComponent(rb_contagiosa_sim)
+                    .addComponent(rb_contagiosa_nao)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cbGrauContagioPatologia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(combo_contagio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -182,15 +188,13 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setText("Medicamento que se restringe:");
 
-        txtRestringirMedicamentoPatologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_incluir_restringir_patologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_incluir_restringir_patologia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-adicionar-16.png"))); // NOI18N
+        btn_incluir_restringir_patologia.setText("INCLUIR");
 
-        btnIncluirRestringirMedicamentoPatologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnIncluirRestringirMedicamentoPatologia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-adicionar-16.png"))); // NOI18N
-        btnIncluirRestringirMedicamentoPatologia.setText("INCLUIR");
-
-        tableMedicamentoRestritoPatologia.setBackground(new java.awt.Color(255, 255, 204));
-        tableMedicamentoRestritoPatologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        tableMedicamentoRestritoPatologia.setModel(new javax.swing.table.DefaultTableModel(
+        table_restringir_patologia.setBackground(new java.awt.Color(255, 255, 204));
+        table_restringir_patologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        table_restringir_patologia.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -201,11 +205,13 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                 "Nome do medicamento", "Vulnerabilidade"
             }
         ));
-        jScrollPane1.setViewportView(tableMedicamentoRestritoPatologia);
+        jScrollPane1.setViewportView(table_restringir_patologia);
 
-        btnLimparTabelaPatologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnLimparTabelaPatologia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/limpar.png"))); // NOI18N
-        btnLimparTabelaPatologia.setText("LIMPAR TABELA");
+        btn_limpar_tabela_patologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_limpar_tabela_patologia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/limpar.png"))); // NOI18N
+        btn_limpar_tabela_patologia.setText("LIMPAR TABELA");
+
+        combo_restringir_patologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -217,12 +223,16 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtRestringirMedicamentoPatologia, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                        .addComponent(combo_restringir_patologia, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnIncluirRestringirMedicamentoPatologia))
-                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(btn_incluir_restringir_patologia))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 578, Short.MAX_VALUE)
-                    .addComponent(btnLimparTabelaPatologia))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btn_limpar_tabela_patologia)))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -233,18 +243,22 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(txtRestringirMedicamentoPatologia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnIncluirRestringirMedicamentoPatologia, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btn_incluir_restringir_patologia, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(combo_restringir_patologia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLimparTabelaPatologia)
+                .addComponent(btn_limpar_tabela_patologia)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        btnGravarPatologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnGravarPatologia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
-        btnGravarPatologia.setText("GRAVAR");
+        btn_gravar_patologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_gravar_patologia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
+        btn_gravar_patologia.setText("GRAVAR");
+
+        btn_novo_patologia.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_novo_patologia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-adicionar-16.png"))); // NOI18N
+        btn_novo_patologia.setText("NOVO");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -255,7 +269,9 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnGravarPatologia))
+                        .addComponent(btn_novo_patologia)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn_gravar_patologia))
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -268,7 +284,9 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnGravarPatologia)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_gravar_patologia)
+                    .addComponent(btn_novo_patologia))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -287,14 +305,19 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel11.setText("Especificação:");
 
-        txtEspecificacaoComorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_especificacao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_especificacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_especificacaoActionPerformed(evt);
+            }
+        });
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel12.setText("Obs.:");
 
-        txtEspecificacaoComorbidade1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_observacao.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
-        txtNomeComorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_nome_comorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -309,15 +332,15 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel12)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtEspecificacaoComorbidade1))
+                        .addComponent(txt_observacao))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel10)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNomeComorbidade, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+                        .addComponent(txt_nome_comorbidade, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel11)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtEspecificacaoComorbidade, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE)))
+                        .addComponent(txt_especificacao, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -329,12 +352,12 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
                     .addComponent(jLabel11)
-                    .addComponent(txtEspecificacaoComorbidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtNomeComorbidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_especificacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_nome_comorbidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
-                    .addComponent(txtEspecificacaoComorbidade1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_observacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
@@ -347,15 +370,13 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel14.setText("Medicamento que se restringe:");
 
-        txtRestringirMedicamentoComorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_incluir_restringir_comorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_incluir_restringir_comorbidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-adicionar-16.png"))); // NOI18N
+        btn_incluir_restringir_comorbidade.setText("INCLUIR");
 
-        btnRestringirMedicamentoComorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnRestringirMedicamentoComorbidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-adicionar-16.png"))); // NOI18N
-        btnRestringirMedicamentoComorbidade.setText("INCLUIR");
-
-        tableMedicamentoRestritoComorbidade.setBackground(new java.awt.Color(255, 255, 204));
-        tableMedicamentoRestritoComorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        tableMedicamentoRestritoComorbidade.setModel(new javax.swing.table.DefaultTableModel(
+        table_restringir_comorbidade.setBackground(new java.awt.Color(255, 255, 204));
+        table_restringir_comorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        table_restringir_comorbidade.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -366,11 +387,18 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                 "Nome do medicamento", "Vulnerabilidade"
             }
         ));
-        jScrollPane2.setViewportView(tableMedicamentoRestritoComorbidade);
+        jScrollPane2.setViewportView(table_restringir_comorbidade);
 
-        btnLimparTabelaComorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnLimparTabelaComorbidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/limpar.png"))); // NOI18N
-        btnLimparTabelaComorbidade.setText("LIMPAR TABELA");
+        btn_limpar_tabela_comorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_limpar_tabela_comorbidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/limpar.png"))); // NOI18N
+        btn_limpar_tabela_comorbidade.setText("LIMPAR TABELA");
+
+        combo_restringir_comorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        combo_restringir_comorbidade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                combo_restringir_comorbidadeActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -382,12 +410,12 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(jLabel14)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtRestringirMedicamentoComorbidade, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                        .addComponent(combo_restringir_comorbidade, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnRestringirMedicamentoComorbidade))
+                        .addComponent(btn_incluir_restringir_comorbidade))
                     .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 578, Short.MAX_VALUE)
-                    .addComponent(btnLimparTabelaComorbidade))
+                    .addComponent(btn_limpar_tabela_comorbidade))
                 .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
@@ -398,22 +426,22 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
-                    .addComponent(txtRestringirMedicamentoComorbidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnRestringirMedicamentoComorbidade, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btn_incluir_restringir_comorbidade, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(combo_restringir_comorbidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLimparTabelaComorbidade)
+                .addComponent(btn_limpar_tabela_comorbidade)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        btnVoltarComorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnVoltarComorbidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/sair.png"))); // NOI18N
-        btnVoltarComorbidade.setText("VOLTAR");
+        btn_novo_comorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_novo_comorbidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-adicionar-16.png"))); // NOI18N
+        btn_novo_comorbidade.setText("NOVO");
 
-        btnGravarComorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnGravarComorbidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
-        btnGravarComorbidade.setText("GRAVAR");
+        txt_gravar_comorbidade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt_gravar_comorbidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
+        txt_gravar_comorbidade.setText("GRAVAR");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -426,9 +454,9 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnVoltarComorbidade)
+                        .addComponent(btn_novo_comorbidade)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnGravarComorbidade)))
+                        .addComponent(txt_gravar_comorbidade)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -437,12 +465,12 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnGravarComorbidade)
-                    .addComponent(btnVoltarComorbidade))
-                .addContainerGap(40, Short.MAX_VALUE))
+                    .addComponent(txt_gravar_comorbidade)
+                    .addComponent(btn_novo_comorbidade))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("COMORBIDADES", jPanel2);
@@ -461,17 +489,31 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void combo_tipo_patologiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_combo_tipo_patologiaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_combo_tipo_patologiaActionPerformed
+
+    private void txt_especificacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_especificacaoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_especificacaoActionPerformed
+
+    private void combo_restringir_comorbidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_combo_restringir_comorbidadeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_combo_restringir_comorbidadeActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnGravarComorbidade;
-    private javax.swing.JButton btnGravarPatologia;
-    private javax.swing.JButton btnIncluirRestringirMedicamentoPatologia;
-    private javax.swing.JButton btnLimparTabelaComorbidade;
-    private javax.swing.JButton btnLimparTabelaPatologia;
-    private javax.swing.JButton btnRestringirMedicamentoComorbidade;
-    private javax.swing.JButton btnVoltarComorbidade;
-    private javax.swing.JComboBox<String> cbGrauContagioPatologia;
-    private javax.swing.JComboBox<String> cbTipoPatologia;
+    private javax.swing.JButton btn_gravar_patologia;
+    private javax.swing.JButton btn_incluir_restringir_comorbidade;
+    private javax.swing.JButton btn_incluir_restringir_patologia;
+    private javax.swing.JButton btn_limpar_tabela_comorbidade;
+    private javax.swing.JButton btn_limpar_tabela_patologia;
+    private javax.swing.JButton btn_novo_comorbidade;
+    private javax.swing.JButton btn_novo_patologia;
+    private javax.swing.JComboBox<String> combo_contagio;
+    private javax.swing.JComboBox<String> combo_restringir_comorbidade;
+    private javax.swing.JComboBox<String> combo_restringir_patologia;
+    private javax.swing.JComboBox<String> combo_tipo_patologia;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -495,16 +537,15 @@ public class Tela_CadDoenca2 extends javax.swing.JInternalFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane2;
-    private javax.swing.JRadioButton rbContagiosaNao;
-    private javax.swing.JRadioButton rbContagiosaSim;
-    private javax.swing.JTable tableMedicamentoRestritoComorbidade;
-    private javax.swing.JTable tableMedicamentoRestritoPatologia;
-    private javax.swing.JTextField txtEspecificacaoComorbidade;
-    private javax.swing.JTextField txtEspecificacaoComorbidade1;
-    private javax.swing.JTextField txtNomeComorbidade;
-    private javax.swing.JTextField txtNomePatologia;
-    private javax.swing.JTextField txtRestringirMedicamentoComorbidade;
-    private javax.swing.JTextField txtRestringirMedicamentoPatologia;
-    private javax.swing.JTextField txtSintomaPatologia;
+    private javax.swing.JRadioButton rb_contagiosa_nao;
+    private javax.swing.JRadioButton rb_contagiosa_sim;
+    private javax.swing.JTable table_restringir_comorbidade;
+    private javax.swing.JTable table_restringir_patologia;
+    private javax.swing.JTextField txt_especificacao;
+    private javax.swing.JButton txt_gravar_comorbidade;
+    private javax.swing.JTextField txt_nome_comorbidade;
+    private javax.swing.JTextField txt_nome_patologia;
+    private javax.swing.JTextField txt_observacao;
+    private javax.swing.JTextField txt_sintoma_patologia;
     // End of variables declaration//GEN-END:variables
 }
