@@ -74,7 +74,7 @@
                   <Font name="Segoe UI" size="14" style="1"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/icons8-m&#xe9;dico-16 (1).png"/>
+                  <Image iconType="3" name="/imagens/icons8-m&#xe9;dico-16.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="M&#xe9;dico"/>
               </Properties>
@@ -88,7 +88,7 @@
                   <Font name="Segoe UI" size="14" style="1"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/icons8-m&#xe9;dico-16.png"/>
+                  <Image iconType="3" name="/imagens/icons8-enfermeiro-16.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Enfermeiro"/>
               </Properties>
@@ -150,7 +150,7 @@
                   <Font name="Segoe UI" size="14" style="1"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/pessoa.png"/>
+                  <Image iconType="3" name="/imagens/icons8-grupo-de-usu&#xe1;rio-homem-mulher-16.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de pacientes"/>
               </Properties>

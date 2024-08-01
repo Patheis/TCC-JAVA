@@ -96,7 +96,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenu1.add(Cad_Doenca);
 
         Cad_Medico.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        Cad_Medico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-médico-16 (1).png"))); // NOI18N
+        Cad_Medico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-médico-16.png"))); // NOI18N
         Cad_Medico.setText("Médico");
         Cad_Medico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,7 +106,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenu1.add(Cad_Medico);
 
         Cad_Enfermeiro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        Cad_Enfermeiro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-médico-16.png"))); // NOI18N
+        Cad_Enfermeiro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-enfermeiro-16.png"))); // NOI18N
         Cad_Enfermeiro.setText("Enfermeiro");
         Cad_Enfermeiro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,7 +146,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenu3.add(Gera_Relat_Med);
 
         Gera_Relat_Paciente.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        Gera_Relat_Paciente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pessoa.png"))); // NOI18N
+        Gera_Relat_Paciente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-grupo-de-usuário-homem-mulher-16.png"))); // NOI18N
         Gera_Relat_Paciente.setText("Relatório de pacientes");
         Gera_Relat_Paciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,7 +199,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Cad_MedicamentosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_MedicamentosActionPerformed
-        Tela_CadMedicamento2 x = new Tela_CadMedicamento2();
+        Tela_CadMedicamento x = new Tela_CadMedicamento();
         jDesktopPane1.add(x);
         x.setVisible(true);
     }//GEN-LAST:event_Cad_MedicamentosActionPerformed
@@ -231,25 +231,25 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_Cad_PacientesActionPerformed
 
     private void Cad_MedicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_MedicarActionPerformed
-        Tela_Medicar2 x = new Tela_Medicar2();
+        Tela_Medicar x = new Tela_Medicar();
         jDesktopPane1.add(x);
         x.setVisible(true);
     }//GEN-LAST:event_Cad_MedicarActionPerformed
 
     private void Cad_DoencaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_DoencaActionPerformed
-        Tela_CadDoenca2 x = new Tela_CadDoenca2();
+        Tela_CadDoenca x = new Tela_CadDoenca();
         jDesktopPane1.add(x);
         x.setVisible(true);
     }//GEN-LAST:event_Cad_DoencaActionPerformed
 
     private void Cad_MedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_MedicoActionPerformed
-        Tela_CadMedico2 x = new Tela_CadMedico2();
+        Tela_CadMedico x = new Tela_CadMedico();
         jDesktopPane1.add(x);
         x.setVisible(true);
     }//GEN-LAST:event_Cad_MedicoActionPerformed
 
     private void Cad_EnfermeiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cad_EnfermeiroActionPerformed
-        Tela_CadEnfermeiro2 x = new Tela_CadEnfermeiro2();
+        Tela_CadEnfermeiro x = new Tela_CadEnfermeiro();
         jDesktopPane1.add(x);
         x.setVisible(true);
     }//GEN-LAST:event_Cad_EnfermeiroActionPerformed
